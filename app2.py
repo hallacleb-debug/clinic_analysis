@@ -1023,14 +1023,14 @@ def create_capacity_pdf(
     if year_85_percent is not None:
             content.append(
                 Paragraph(
-                    f"""85% utilization is reached in Year {year_85_percent}""",
+                    f"""Given current conditions, 85% utilization is reached in {year_85_percent} years.""",
                     centered_note_style
                 )
             )
     else:
         content.append(
             Paragraph(
-                f"""85% utilization was not reach in the time frame.""",
+                f"""Given current conditions, 85% utilization will not be reached in the next 20 years.""",
                 centered_note_style
             )
         )
