@@ -639,7 +639,7 @@ def create_capacity_pdf(
     content.append(
         Paragraph(
             f"""
-            REPORT GENERATED: {report_date} at {report_time}
+            REPORT GENERATED: {report_date}
             <br/>
             ANALYSIS DATES: {data_start_date} - {data_end_date}
             """,
@@ -1182,7 +1182,7 @@ with col1:
 with col2:
     st.title("Clinic Capacity Analysis")
 
-uploaded_file = st.file_uploader("Upload EPIC data for clinic you want to analyze.", type='csv')
+uploaded_file = st.file_uploader("Upload Axiom appointment data for any clinic you want to analyze through any time frame.", type='csv')
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
