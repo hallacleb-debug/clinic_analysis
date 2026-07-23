@@ -1464,6 +1464,8 @@ if uploaded_file is not None:
                 columns=results["future"][0]
 
             ))
+
+            year_85_percent = results.get("year_85_percent")
             
             if year_85_percent is not None:
                 st.warning(
